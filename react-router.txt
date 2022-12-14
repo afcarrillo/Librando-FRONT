@@ -1,0 +1,22 @@
+App
+
+<Navbar> (menu hamburguesa, barra busqueda, nombre y logo, logica si login o no boton login/perfil, boton signup/logout)
+
+
+<section>
+{user.admin ? return <Sidebar> : ""} (opciones de administrador: crear producto, modificar producto, eliminar producto, ver ordenes...)
+    <Routes>
+        /home <Home> (bienvenida, carrusel...)
+        /login <Login> (formulario)
+        /logout <Logut> (lógica de logout y redirecciona a home)
+        /genero/:type <Grid> (lógica de traer libros de genero type y va a llamar a <Card>) (incluir /genero/all y traer todos los libros tambien)
+        /signup <Signup> (formulario)
+        /book/:title <Content> logica de traer libro include reviews
+                        <Book> (Foto portada, titulo, descripcion, autor, precio, rating promedio, boton comprar/añadir a carrito... debajo ratings and reviews)
+                        <Reviews> (tipo grid sin imagen u otra cosa) autor, comentario, opcion de escribir review estando logueado
+        /checkout <Carrito> (tabla con los productos guardados en redux, total, boton pagar (si estás logueado) )
+        /user <User> info del usario, boton historial ordenes, ver reviews
+    </Routes>
+
+
+</section

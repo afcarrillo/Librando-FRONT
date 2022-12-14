@@ -1,0 +1,40 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+body {
+  padding-top: 80px;
+}
+
+$custom-colors: (
+  "color1": #ffd8b8,
+  "color2": #ffb375,
+  "color3": #c68d2b,
+  "color4": #bb5c0f,
+  "color5": #60330a,
+  "color6": #3b2103,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+.app {
+  background-color: #ffd8b8;
+  font-family: "Kanit", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap)
+    format("truetype");
+}
+
+.img-wrappper {
+  max-width: 100%;
+  height: 17em;
+}
+
+.logginButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.myNavbar {
+  background-image: var(--bs-gradient);
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

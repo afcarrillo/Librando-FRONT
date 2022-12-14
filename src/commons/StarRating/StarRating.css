@@ -1,0 +1,21 @@
+.yellow {
+    color: yellow;
+    /* color: #e3872a; */
+    font-size: 20px;
+    /* box-shadow: 0 0 10px rgb(250, 246, 246), 0 0 20px #fff, 0 0 30px #817f7e,
+    0 0 40px #0c0c0c, 0 0 50px #151515, 0 0 60px #080808, 0 0 70px #120112; */
+    
+}
+
+.star {
+    
+    color: grey;
+    font-size: 20px;
+
+
+}
+
+.pointer {
+    cursor: pointer;
+
+}
